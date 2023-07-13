@@ -1,0 +1,91 @@
+@use 'variables'
+
+/*Geral*/
+#Projects
+    background-color: variables.$Cor4
+    height: 100vh
+
+#HeaderProjects
+    padding-top: 90px
+    text-align: center
+    font-size: 1.2rem
+    color: variables.$Cor2
+    margin-bottom: 30px
+
+main
+    width: 100vw
+    margin: auto
+
+/*Foto principal    
+#Destaque
+    width: 36vw
+    height: 36vh
+    margin: auto
+    font-size: 3rem
+    color: variables.$Cor1
+    display: flex
+    align-content: center
+    justify-content: center
+    position: relative
+    margin-bottom: 20px
+
+    img
+        width: 100%
+        height: 100%
+
+    svg
+        position: absolute
+        top: 50%
+        translate:0 -50%
+        background-color: variables.$Cor4T
+        transition: .3s 
+    
+    svg:hover
+        color: variables.$Cor3
+        cursor: pointer
+        background-color: transparent
+
+/*Setas e botão da foto principal*/
+#Left
+    position: absolute
+    left: 1px
+
+#Right
+    position: absolute
+    right: 1px
+    
+#Open
+    position: absolute
+    top: 90%
+    left: 85%
+    width: 100px
+    height: 30px
+    border: none
+    background-color: variables.$Cor4T
+    color: variables.$Cor1
+    font-weight: bold
+    transition: .3s
+
+#Open:hover
+    color: variables.$Cor3
+    cursor: pointer
+    font-size: 1.2rem
+
+/*Fotos pequenas*/
+#Miniaturas
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    flex-wrap: wrap
+
+    img
+        width: 15vw
+        height: 15vh
+        margin: 10px
+        transition: 0.3s
+    
+    img:hover
+        opacity: 0.4
+        cursor: pointer
+

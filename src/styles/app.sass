@@ -1,0 +1,40 @@
+@use 'variables'
+
+/*Geral*/    
+.App
+    position: relative
+
+#HomePage
+    height: 100vh
+    width: 100vw
+    background-image: url('../img/bg.png')
+    background-size: cover
+
+/*Conteudo*/
+#InitialPage
+    position: absolute
+    right: 5%
+    top: 50%
+    translate: (0 -50%)
+    width: 700px
+    height: 200px
+    display: flex
+    direction: column
+    flex-wrap: wrap
+    align-items: flex-end
+    justify-content: center
+    
+    h1
+        font-size: 3rem
+        color: variables.$Cor1
+        background-color: variables.$Cor4T
+        border-radius: 25px
+        text-align: center
+        padding: 10px
+
+        span
+            font-size: 1.7rem
+            font-style: italic
+
+
+

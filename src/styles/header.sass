@@ -1,0 +1,48 @@
+@use 'variables'
+
+/*Geral*/    
+#Header
+    position: absolute
+    height: 10%
+    width: 100vw
+    background-color: transparent
+    color: variables.$Cor1
+    font-size: 1.8rem
+    padding: 1.8rem
+    display: flex
+    justify-content: space-between
+    align-items: center  
+
+#Navbar
+    display: flex
+    list-style: none
+    padding: 1rem
+    font-weight: bold
+
+    span
+        padding:0 3rem
+        opacity: 0.3
+
+/*Items Navbar*/    
+#Navbar .Link
+    text-decoration: none
+    color: variables.$Cor1
+    transition: .3s
+    background-color: transparent
+
+#Navbar .Link:hover 
+    color: variables.$Cor3
+    cursor: pointer
+
+#Navbar .Link.Active
+    border-bottom: 3px solid variables.$Cor1
+
+/*Language*/
+#Header h3
+    color: variables.$Cor1
+    font-size: 1.8rem
+    transition: .3s
+  
+#Header h3:hover 
+    color: variables.$Cor3
+    cursor: pointer

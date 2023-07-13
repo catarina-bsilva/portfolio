@@ -1,0 +1,120 @@
+@use 'variables'
+
+/*Geranl*/   
+#Project
+    background-color: variables.$Cor4
+    height: 100vh
+
+/*Nome de projecto + botão de fechar página*/    
+#HeaderProject
+    padding: 30px 
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    color: variables.$Cor1
+
+    h1
+        font-size: 2.3rem
+
+    svg
+        position: absolute
+        right: 20px
+        top: 20px
+        font-size: 3rem
+        opacity: 0.7
+        color: variables.$Cor1
+        transition: .3s
+
+    svg:hover
+        color: variables.$Cor3
+        cursor: pointer
+
+/*Fotos*/   
+#FotosProjecto
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    width: 100vw
+    margin: auto
+
+.Foto   
+    position: relative
+    
+    img
+        width: 35vw
+        height: 35vh
+        margin: 10px
+    
+    svg
+        color: variables.$Cor1
+        background-color: variables.$Cor4T
+        font-size: 2rem
+        position: absolute
+        top: 25px
+        right: 30px
+        transition: .3s
+
+    svg:hover 
+        cursor: pointer
+        color: variables.$Cor3
+        background-color: transparent
+
+/*Link para website*/    
+#Link
+    text-align: center
+    transition: .3s
+
+    a
+        text-decoration: none
+        color: variables.$Cor2
+        font-size: 1.5rem
+        transition: .3s
+
+    a:hover
+        color: variables.$Cor3
+        cursor: pointer
+
+/*FullScreen*/
+#FullScreen
+    display: none
+    width: 100vw
+    height: 100vh
+    position: fixed
+    z-index: 1
+    left: 0
+    top: 0
+    background-color: rgb(0, 0 ,0)
+    background-color: rgba(0,0 ,0, 0.9)
+
+#FullScreenImage
+    position: absolute
+    top: 50%
+    left: 50%
+    translate: -50% -50%
+    display: block
+    width: 90%
+    max-width: 1200px
+
+#CloseFullScreen
+    position: absolute
+    top: 35px
+    right: 35px
+    font-size: 3rem
+    color: variables.$Cor1
+    background-color: variables.$Cor4T
+    transition: .3s
+
+#CloseFullScreen:hover 
+    cursor: pointer
+    background-color: transparent
+    color: variables.$Cor3
+
+
+@keyframes zoom
+    from
+        transform: scale(0)
+    to
+        transform: scale(1)
+
+  
