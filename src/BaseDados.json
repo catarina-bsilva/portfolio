@@ -1,79 +1,69 @@
-{
-    "Projects":[
-        {
-            "id": 1 ,
-            "name": "FilmesDB" ,
-            "FotoPrincipal": "/src/img/projectos/Projecto1Principal.png" ,
-            "FotosProjecto": [
-                "/src/img/projectos/Projecto1Foto1.png" , 
-                "/src/img/projectos/Projecto1Foto2.png" ,
-                "/src/img/projectos/Projecto1Foto3.png" ,
-                "/src/img/projectos/Projecto1Foto4.png" ],
-            "Link": "https://catarina-bsilva.github.io/FilmesDB/"
-        },
-        {
-            "id": 2,
-            "name": "(Un)Healthy" ,
-            "FotoPrincipal":"/src/img/projectos/Projecto2Principal.png" ,
-            "FotosProjecto": [
-                "/src/img/projectos/Projecto2Foto1.png" , 
-                "/src/img/projectos/Projecto2Foto2.png" ,
-                "/src/img/projectos/Projecto2Foto3.png" ,
-                "/src/img/projectos/Projecto2Foto4.png"],
-            "Link": "https://catarina-bsilva.github.io/unhealthy-restaurant/"
-        },
-        {
-            "id": 3 ,
-            "name": "Amy" ,
-            "FotoPrincipal":"/src/img/projectos/Projecto3Principal.png" ,
-            "FotosProjecto": [
-                "/src/img/projectos/Projecto3Foto1.png" , 
-                "/src/img/projectos/Projecto3Foto2.png" ,
-                "/src/img/projectos/Projecto3Foto3.png" ,
-                "/src/img/projectos/Projecto3Foto4.png"],
-            "Link": "https://catarina-bsilva.github.io/amy-restaurant/"
-        },
-        {
-            "id": 4 ,
-            "name": "Budget" ,
-            "FotoPrincipal": "/src/img/projectos/Projecto4Principal.png" ,
-            "FotosProjecto": [
-                "/src/img/projectos/Projecto4Foto1.png" , 
-                "/src/img/projectos/Projecto4Foto2.png" ,
-                "/src/img/projectos/Projecto4Foto3.png" ,
-                "/src/img/projectos/Projecto4Foto4.png" ],
-            "Link": "https://catarina-bsilva.github.io/Budget-app/"
-        },
-        {
-            "id": 5,
-            "name": "Make your Burger" ,
-            "FotoPrincipal": "/src/img/projectos/Projecto5Principal.png" ,
-            "FotosProjecto": [
-                "/src/img/projectos/Projecto5Foto1.png" , 
-                "/src/img/projectos/Projecto5Foto2.png"  ],
-            "Link": "https://github.com/catarina-bsilva"
-        },
-        {
-            "id": 6,
-            "name": "Quiz" ,
-            "FotoPrincipal": "/src/img/projectos/Projecto6Principal.png" ,
-            "FotosProjecto": [
-                "/src/img/projectos/Projecto6Foto1.png" , 
-                "/src/img/projectos/Projecto6Foto2.png" ,
-                "/src/img/projectos/Projecto6Foto3.png"  ],
-            "Link": "https://github.com/catarina-bsilva"
-        },
-        {
-            "id": 6,
-            "name": "Costs" ,
-            "FotoPrincipal": "/src/img/projectos/Projecto7Principal.png" ,
-            "FotosProjecto": [
-                "/src/img/projectos/Projecto7Foto1.png" , 
-                "/src/img/projectos/Projecto7Foto2.png" ,
-                "/src/img/projectos/Projecto7Foto3.png" ,
-                "/src/img/projectos/Projecto7Foto4.png" ],
-            "Link": "https://catarina-bsilva.github.io/Costs"
-        }
-
-] 
-}
+[
+    {
+        "id": 1 ,
+        "name": "FilmesDB" ,
+        "FotoPrincipal":"/img/projectos/Projecto1Principal.png"  ,
+        "foto1": "/img/projectos/Projecto1Foto1.png" , 
+        "foto2": "/img/projectos/Projecto1Foto2.png" ,
+        "foto3": "/img/projectos/Projecto1Foto3.png" ,
+        "foto4":  "/img/projectos/Projecto1Foto4.png" ,
+        "Link": "https://catarina-bsilva.github.io/FilmesDB/"
+    },
+    {
+        "id": 2,
+        "name": "(Un)Healthy" ,
+        "FotoPrincipal":"/img/projectos/Projecto2Principal.png" ,
+        "foto1": "/img/projectos/Projecto2Foto1.png" , 
+        "foto2": "/img/projectos/Projecto2Foto2.png" ,
+        "foto3": "/img/projectos/Projecto2Foto3.png" ,
+        "foto4":  "/img/projectos/Projecto2Foto4.png" ,
+        "Link": "https://catarina-bsilva.github.io/unhealthy-restaurant/"
+    },
+    {
+        "id": 3 ,
+        "name": "Amy" ,
+        "FotoPrincipal":"/img/projectos/Projecto3Principal.png" ,
+        "foto1": "/img/projectos/Projecto3Foto1.png" , 
+        "foto2": "/img/projectos/Projecto3Foto2.png" ,
+        "foto3": "/img/projectos/Projecto3Foto3.png" ,
+        "foto4":  "/img/projectos/Projecto3Foto4.png" ,
+        "Link": "https://catarina-bsilva.github.io/amy-restaurant/"
+    },
+    {
+        "id": 4 ,
+        "name": "Budget" ,
+        "FotoPrincipal": "/img/projectos/Projecto4Principal.png" ,
+        "foto1": "/img/projectos/Projecto4Foto1.png" , 
+        "foto2": "/img/projectos/Projecto4Foto2.png" ,
+        "foto3": "/img/projectos/Projecto4Foto3.png" ,
+        "foto4":  "/img/projectos/Projecto4Foto4.png" ,
+        "Link": "https://catarina-bsilva.github.io/Budget-app/"
+    },
+    {
+        "id": 5,
+        "name": "Make your Burger" ,
+        "FotoPrincipal": "/img/projectos/Projecto5Principal.png" ,
+        "foto1": "/img/projectos/Projecto5Foto1.png" , 
+        "foto2": "/img/projectos/Projecto5Foto2.png" ,
+        "Link": "https://github.com/catarina-bsilva"
+    },
+    {
+        "id": 6,
+        "name": "Quiz" ,
+        "FotoPrincipal": "/img/projectos/Projecto6Principal.png" ,
+        "foto1": "/img/projectos/Projecto6Foto1.png" , 
+        "foto2": "/img/projectos/Projecto6Foto2.png" ,
+        "foto3": "/img/projectos/Projecto6Foto3.png" ,
+        "Link": "https://github.com/catarina-bsilva"
+    },
+    {
+        "id": 7,
+        "name": "Costs" ,
+        "FotoPrincipal": "/img/projectos/Projecto7Principal.png" ,
+        "foto1": "/img/projectos/Projecto7Foto1.png" , 
+        "foto2": "/img/projectos/Projecto7Foto2.png" ,
+        "foto3": "/img/projectos/Projecto7Foto3.png" ,
+        "foto4":  "/img/projectos/Projecto7Foto4.png" ,
+        "Link": "https://catarina-bsilva.github.io/Costs"
+    }
+  ]

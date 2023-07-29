@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import {BsChevronRight, BsChevronLeft} from 'react-icons/bs'
 
 import '../../styles/projects.sass'
+import Data from '../../BaseDados.json'
 
 const Projects = () => {
 
@@ -27,6 +28,7 @@ const Projects = () => {
     const currentIndex = FotosProjectos.indexOf(FotoPrimeiroProjecto)
     const prevIndex = (currentIndex - 1 + FotosProjectos.length) % FotosProjectos.length
     setFotoPrimeiroProjecto(FotosProjectos[prevIndex])
+    setActualProject(prevIndex)
   }
 
   const NextDestaque = () => {
@@ -34,11 +36,10 @@ const Projects = () => {
     const currentIndex = FotosProjectos.indexOf(FotoPrimeiroProjecto)
     const nextIndex = (currentIndex + 1) % FotosProjectos.length
     setFotoPrimeiroProjecto(FotosProjectos[nextIndex])
+    setActualProject(nextIndex)
   }
 
   const BdFotoProjecto = async () => {
-    const Res = await fetch("http://localhost:3000/Projects")
-    const Data = await Res.json()
     const PrimeiraFoto = Data[0].FotoPrincipal
     const Fotos = Data.map((projecto) => projecto.FotoPrincipal)
     const IndexFotos = Data.map((projecto, index) => ({

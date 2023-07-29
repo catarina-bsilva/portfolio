@@ -4,7 +4,7 @@ import { LanguageContext } from '../../context/LanguageContext'
 import { ActualProjectContext } from '../../context/ActualProjectContext'
 
 import { AiOutlineCloseCircle, AiOutlineFullscreen, AiOutlineFullscreenExit } from 'react-icons/ai'
-
+import Data from '../../BaseDados.json'
 import '../../styles/project.sass'
 
 const Project = (props) => {
@@ -19,51 +19,21 @@ const Project = (props) => {
   
   useEffect(() => {
     const fetchProjectData = async () => {
-      const Res = await fetch("http://localhost:3000/Projects")
-      const Data = await Res.json()
       const ProjetoAtual = Data[parseInt(ActualProject)]
-      setImage(ProjetoAtual.FotosProjecto)
       setTitle(ProjetoAtual.name)
+      
+      const fotos = [
+        ProjetoAtual.foto1,
+        ProjetoAtual.foto2,
+        ProjetoAtual.foto3,
+        ProjetoAtual.foto4,
+      ].filter(foto => foto);
+
+      setImage(fotos)
       setLinkPrj(ProjetoAtual.Link)
     }
     fetchProjectData()
   }, [ActualProject])
-
-  useEffect(() => {
-
-    const FotosProjecto = async () => {
-      const Res = await fetch("http://localhost:3000/Projects")
-      const Data = await Res.json()
-      const Fotos = Data[parseInt(ActualProject)].FotosProjecto
-      setImage(Fotos)
-    }
-    
-    FotosProjecto()
-  }, [])
-
-  useEffect(() => {
-
-    const TituloProjecto = async () => {
-      const Res = await fetch("http://localhost:3000/Projects")
-      const Data = await Res.json()
-      const Titulo = Data[parseInt(ActualProject)].name
-      setTitle(Titulo)
-    }
-    
-    TituloProjecto()
-  }, [])
-
-  useEffect(() => {
-
-    const LinkProjecto = async () => {
-      const Res = await fetch("http://localhost:3000/Projects")
-      const Data = await Res.json()
-      const LinkSite = Data[parseInt(ActualProject)].Link
-      setLinkPrj(LinkSite)
-    }
-    
-    LinkProjecto()
-  }, [])
 
 
   useEffect(() => {
@@ -107,13 +77,15 @@ const Project = (props) => {
     <div id='Project'>
         <div id='HeaderProject'>
           <h1>{Title}</h1>
-          <Link to="/Projects" className='Link'><AiOutlineCloseCircle/></Link>
+          <Link to="/Projects" className='Link' onClick={() => setActualProject(0)}><AiOutlineCloseCircle/></Link>
         </div>
         <div id="FotosProjecto">
-          <div className='Foto'><img src={Image.length > 0 && Image[0]} alt="foto" /> <AiOutlineFullscreen className='OpenImage' onClick={() => setFullScreenImage(Image.length > 0 && Image[0])}/></div>
-          <div className='Foto'><img src={Image.length > 0 && Image[1]} alt="foto" /> <AiOutlineFullscreen className='OpenImage' onClick={() => setFullScreenImage(Image.length > 0 && Image[1])}/></div>
-          <div className='Foto'><img src={Image.length > 0 && Image[2]} alt="foto" /> <AiOutlineFullscreen className='OpenImage' onClick={() => setFullScreenImage(Image.length > 0 && Image[2])}/></div>
-          <div className='Foto'><img src={Image.length > 0 && Image[3]} alt="foto" /> <AiOutlineFullscreen className='OpenImage' onClick={() => setFullScreenImage(Image.length > 0 && Image[3])}/></div>
+        {Image.map((foto, index) => (
+          <div className='Foto' key={index}>
+            <img src={foto} alt={`foto-${index}`} />
+            <AiOutlineFullscreen className='OpenImage' onClick={() => setFullScreenImage(foto)} />
+          </div>
+        ))}
         </div>
         <div id='FullScreen'>
           <AiOutlineFullscreenExit id='CloseFullScreen'/>
